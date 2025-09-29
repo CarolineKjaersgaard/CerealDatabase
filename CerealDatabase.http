@@ -1,0 +1,6 @@
+@CerealDatabase_HostAddress = http://localhost:5250
+
+GET {{CerealDatabase_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
