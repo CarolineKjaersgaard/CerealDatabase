@@ -20,18 +20,18 @@ class Driver
         Console.WriteLine("Testing commands");
         CommandService commander = new CommandService(_db);
 
-        Console.WriteLine("Testing create cereal command");
+        Console.WriteLine("Testing create cereal command by creating super basic");
         commander.AddCereal(new Cereal {Name = "Super Basic", Mfr = CerealDatabase.Models.Manufacturer.A, Type = CerealDatabase.Models.Type.H, Calories = 130, Protein = 3, Fat = 2, Sodium = 210, Fiber = 2, Carbo = 18, Sugars = 8, Potass = 100, Vitamins = 25, Shelf = 3, Weight = 1, Cups = 2, Rating = 37038562 });
 
         Console.WriteLine("Testing commmand for getting super basic cereal");
         Cereal basic = commander.GetCereal("Super Basic");
         Console.WriteLine(basic);
 
-        Console.WriteLine("Testing update command");
+        Console.WriteLine("Testing super basic update command from mfr A to G");
         commander.UpdateCereal(new Cereal {Name = "Super Basic", Mfr = CerealDatabase.Models.Manufacturer.G, Type = CerealDatabase.Models.Type.H, Calories = 130, Protein = 3, Fat = 2, Sodium = 210, Fiber = 2, Carbo = 18, Sugars = 8, Potass = 100, Vitamins = 25, Shelf = 3, Weight = 1, Cups = 2, Rating = 37038562 });
 
 
-        Console.WriteLine("Testing delete command");
+        Console.WriteLine("Testing delete command on super basic");
         commander.DeleteCereal("Super Basic");
 
         Console.WriteLine("Testing queries");
