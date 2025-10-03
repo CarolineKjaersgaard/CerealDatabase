@@ -1,0 +1,29 @@
+**Cereal API**
+A RESTful API for managing a cereal database. Built with ASP.NET Core and Entity Framework Core, this project demonstrates CRUD operations, filtering, and CSV-based data seeding.
+
+**Features**
+*Create, Read, Update, Delete cereals in database
+*Filter cereals by values
+*Seed database from csv file
+*Driver class for testing and demonstration
+
+**Endpoints**
+POST: /api/cereals
+DELETE: /api/cereals/{name}
+
+**Dependencies**
+*SQLite
+*ASP.NET core
+*Entity Framework Core
+*CsvHelper
+
+**Installing**
+git clone https://github.com/carolinekjaersgaard/cerealdatabase.git
+
+**Executing Program**
+Running app in webserver: dotnet run
+Run driver class: dotnet run -- --test
+
+**Author**
+Caroline Thorslund Kjærsgaard
+@carolinekjaersgaard
