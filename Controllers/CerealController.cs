@@ -5,11 +5,11 @@ using Microsoft.AspNetCore.Mvc;
 [Route("api/[controller]")]
 
 // Allows user to call endpoints in webserver
-public class Controller : ControllerBase
+public class CerealController : ControllerBase
 {
     private readonly CommandService _commander;
 
-    public Controller(AppDbContext db)
+    public CerealController(AppDbContext db)
     {
         _commander = new CommandService(db);
     }

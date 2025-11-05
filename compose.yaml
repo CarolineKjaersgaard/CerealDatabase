@@ -1,0 +1,16 @@
+
+version: '3.8'
+
+services:
+  cereal-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "5250:5250"
+    container_name: cereal-api-container
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: "http://+:5250"
+    volumes:
+      - ./Data:/CerealDatabase/Data

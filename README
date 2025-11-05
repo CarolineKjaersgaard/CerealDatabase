@@ -12,6 +12,7 @@ POST: /api/cereals
 DELETE: /api/cereals/{name}
 
 **Dependencies**
+If using Docker, dependencies can be ignored.
 *SQLite
 *ASP.NET core
 *Entity Framework Core
@@ -21,8 +22,11 @@ DELETE: /api/cereals/{name}
 git clone https://github.com/carolinekjaersgaard/cerealdatabase.git
 
 **Executing Program**
-Running app in webserver: dotnet run
+Running api with docker in webserver: docker compose up --build
+Running api in webserver: dotnet run
 Run driver class: dotnet run -- --test
+
+Access at: http://localhost:5250/swagger
 
 **Author**
 Caroline Thorslund Kjærsgaard

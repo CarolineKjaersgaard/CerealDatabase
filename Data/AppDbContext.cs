@@ -14,5 +14,4 @@ public class AppDbContext : DbContext
         modelBuilder.Entity<Cereal>()
             .HasKey(c => c.Name);
     }
-
 }
